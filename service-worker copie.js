@@ -1,6 +1,6 @@
 self.addEventListener('install', (e) => {
   e.waitUntil(
-    caches.open('ilearn-store').then((cache) => cache.addAll([
+    caches.open('Neocean').then((cache) => cache.addAll([
       '/',
       '/index copie.html',
       '/style copie.css',
