@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Les RDV Du Lagon</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((reg) => {
+        console.log('Service worker registered.', reg);
+      });
+  }
+</script>
+
+</head>
+<body>
+  <div id="accueil" class="ecran">
+    <h1>NeOcean</h1>
+    <div class="bloc" id="LesRDVduLagon">
+      Carte des évènements
+    </div>
+    <div class="bloc" id="enregistrerévènement">
+      Enregistrer un évènement
+    </div>
+    <div class="bloc" id="siteneOcean">
+      Actualités NeOcean 
+    </div>
+  </div>
+
+  <div id="ecranCarteographie" class="ecran">
+    <div class="centered">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14I-NKa3EEkhLxqSqARBwHDb4VHfF4uo&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
+    <button id="retourAccueil1">Retour</button>
+</div>
+
+  <form action="https://formspree.io/f/mgejboyl" method="POST" id="ecranEnregistrerContact" class="ecran">
+    <input type="text" name="Nom" placeholder="Nom de l'évènement">
+    <input type="text" name="organisateur" placeholder="Organisateur">
+    <input type="textarea" name="lieu" placeholder="Lieu">
+    <input type="date" name="Date" placeholder="Date">
+    <input type="text" name="prix" placeholder="Prix">
+    <input type="file" name="photo" accept="image/jpeg, image/png">
+    <input type="text" name="lien" placeholder="Lien vers l'évènement">
+    <button type="submit" id="enregistrer">Enregistrer</button>
+    <button type="button" id="retourAccueil2">Retour</button>
+</form>
+
+  <script src="app.js"></script>
+</body>
+</html>

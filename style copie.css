@@ -1,0 +1,87 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;  /* pour désactiver le défilement */
+}
+
+body {
+  background-image: url('background.png');
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;  /* white color for text */
+  display: flex;  /* use Flexbox for layout */
+  flex-direction: column;  /* stack elements vertically */
+  align-items: center;  /* center elements horizontally */
+  justify-content: center;  /* center elements vertically */
+  height: 100vh;  /* make the body fill the viewport height */
+  margin: 0;  /* remove default margins */
+  padding: 0;  /* remove default padding */
+  box-sizing: border-box;  /* include padding and border in element's total width and height */
+  font-size: 18px;  /* larger text size */
+}
+
+#accueil {
+  display: flex; /* Make the block a Flexbox container */
+  flex-direction: column; /* Stack the items vertically */
+  justify-content: center; /* Center the items vertically */
+  background-color: rgba(34, 17, 102, 0.8);  /* semi-transparent dark color for background */
+  padding: 20px;
+  border-radius: 15px;  /* rounded corners */
+  text-align: center;  /* center the text */
+  min-height: 50vh;  /* make the block take up at least 50% of the viewport height */
+}
+
+
+.centered iframe {
+  width: 100%;  /* Full width of the container */
+  height: 70vh; /* 70% of the viewport height */
+  aspect-ratio: 16 / 9; /* Optional, to maintain aspect ratio */
+}
+
+
+
+#ecranCarteDeVisite,
+#ecranEnregistrerContact {
+  display: none;
+  background-color: rgba(38, 29, 117, 0.8);  /* semi-transparent dark color for background */
+  padding: 20px;
+  border-radius: 15px;  /* rounded corners */
+  width: 80%;  /* make the blocks larger */
+  align-items: center; /* Center the items horizontally */
+  justify-content: center; /* Center the items vertically */
+}
+
+.bloc {
+  border: 1px solid #2b2a84;  /* medium color for borders */
+  padding: 20px;
+  margin: 20px;  /* larger margin */
+  border-radius: 15px;  /* rounded corners for a more fluid look */
+  background-color: rgba(255, 255, 255, 0.1);  /* slight white overlay for depth */
+  width: 80%;  /* make the blocks larger */
+}
+
+button {
+  background-color: #DD4422;  /* contrasting color for buttons */
+  color: #ffffff;  /* white color for button text */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;  /* rounded corners for buttons */
+  cursor: pointer;  /* pointer cursor on hover over buttons */
+  transition: background-color 0.3s;  /* smooth color transition on hover */
+  width: 100%;  /* make the buttons fill the width of the block */
+  margin-top: 20px;  /* add some space above the buttons */
+}
+
+button:hover {
+  background-color: #2b2a84;  /* different color for button on hover */
+}
+
+input[type="text"] {
+  display: block;  /* make the input fields stack vertically */
+  width: 100%;  /* make the input fields fill the width of the block */
+  padding: 10px;  /* add some padding inside the input fields */
+  margin-bottom: 10px;  /* add some space below the input fields */
+}
+
+

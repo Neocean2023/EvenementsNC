@@ -1,0 +1,21 @@
+{
+  "short_name": "Les RDV du Lagon",
+  "name": "Les RDV du Lagon by NeOcean",
+  "description": "Bienvenue sur la cartographie de NeOcean recensant les évènements maritimes de Nouvelle-Calédonie",
+  "start_url": "/",
+  "background_color": "#EEEEEE",
+  "theme_color": "#221166",
+  "display": "standalone",
+   "icons": [
+        {
+            "src": "icone.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icone.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
