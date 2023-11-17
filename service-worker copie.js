@@ -2,7 +2,7 @@ self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('Neocean').then((cache) => cache.addAll([
       '/',
-      '/index copie.html',
+      '/index.html',
       '/style copie.css',
       '/app copie.js',
       '/background.png',
