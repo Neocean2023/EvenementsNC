@@ -2,9 +2,9 @@ self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open('ilearn-store').then((cache) => cache.addAll([
       '/',
-      '/index.html',
-      '/style.css',
-      '/app.js',
+      '/index copie.html',
+      '/style copie.css',
+      '/app copie.js',
       '/background.png',
       '/qr.png',
       '/icone.png',
